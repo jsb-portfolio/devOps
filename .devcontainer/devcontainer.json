@@ -1,0 +1,21 @@
+{
+    "name": "devOps",
+    "build": {
+        "dockerfile": "Dockerfile" // Use Dockerfile instead of Microsoft images to avoid re-running postCreateScripts every time. Dockerfile builds the image once and reuses it.
+    },
+    "runArgs": [
+        "--name=devOps",
+        "--network=host"
+    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "github.vscode-github-actions", // GitHub Actions
+                "hashicorp.terraform", //Terraform
+                "redhat.vscode-yaml", //YAML
+                "redhat.ansible" //Ansible
+            ]
+        }
+    },
+    "shutdownAction": "stopContainer"
+}
