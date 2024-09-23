@@ -1,0 +1,3 @@
+[submodule "sites/bookmyevent"]
+	path = sites/bookmyevent
+	url = git@github.com:jsb-portfolio/devOps.git
