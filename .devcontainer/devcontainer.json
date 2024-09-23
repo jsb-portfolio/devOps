@@ -1,10 +1,10 @@
 {
-    "name": "devOps",
+    "name": "devops",
     "build": {
         "dockerfile": "Dockerfile" // Use Dockerfile instead of Microsoft images to avoid re-running postCreateScripts every time. Dockerfile builds the image once and reuses it.
     },
     "runArgs": [
-        "--name=devOps",
+        "--name=devops",
         "--network=host"
     ],
     "customizations": {
